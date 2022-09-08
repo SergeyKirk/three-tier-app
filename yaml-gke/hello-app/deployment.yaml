@@ -60,7 +60,7 @@ spec:
     targetPort: http
 ---
 apiVersion: apps/v1
-kind: Deployment
+kind: DaemonSet
 metadata:
   name: backend
 spec:
