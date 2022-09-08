@@ -12,7 +12,7 @@ spec:
         pathType: ImplementationSpecific
         backend:
           service:
-            name: hello-frontend-service
+            name: frontend
             port:
               number: 80
       - path: /wordpress
