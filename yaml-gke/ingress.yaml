@@ -15,7 +15,7 @@ spec:
             name: hello-frontend-service
             port:
               number: 80
-      - path: /
+      - path: /wordpress
         pathType: ImplementationSpecific
         backend:
           service:
