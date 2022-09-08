@@ -1,5 +1,6 @@
 vpc_name        = "three-tier-vpc"
 
+auto_create_sub = false
 subnet_us_name = "us-a"
 subnet_us_range = "10.0.0.0/16"
 
