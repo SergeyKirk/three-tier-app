@@ -1,15 +1,3 @@
-variable "backend_bucket_name" {
-
-}
-
-variable "backend_location" {
-  default = "US"
-}
-
-variable "force_destroy" {
-  default = true
-}
-
 variable "project_id" {
   description = "- (Required)  Google account project id."
 }
