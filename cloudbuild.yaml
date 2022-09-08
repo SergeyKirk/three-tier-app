@@ -1,8 +1,4 @@
 steps:
-  - name: ubuntu
-    args:
-      - cd
-      - terraform
   - name: 'hashicorp/terraform:1.0.0'
     args:
       - init
@@ -22,15 +18,11 @@ steps:
       - '-auto-approve'
       - '-input=false'
       - '-lock=false'
-  - name: ubuntu
-    args:
-      - cd
-      - ..
   - name: gcr.io/cloud-builders/kubectl
     args:
       - apply
       - '-f'
-      - hello-app/deployment.yaml
+      - yaml-gke/hello-app/deployment.yaml
     env:
       - 'CLOUDSDK_COMPUTE_REGION=us-central1'
       - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
