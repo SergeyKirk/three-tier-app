@@ -32,6 +32,10 @@ steps:
       - apply
       - '-f'
       - yaml-gke/wordpress/
+    env:
+      - 'CLOUDSDK_COMPUTE_REGION=us-central1'
+      - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
+      - 'CLOUDSDK_CONTAINER_CLUSTER=three-tier-app'
 timeout: 1200s
 options:
   logging: CLOUD_LOGGING_ONLY
