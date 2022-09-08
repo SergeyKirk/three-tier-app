@@ -1,5 +1,5 @@
 module "network" {
-  source = "../modules/network"
+  source = "./modules/network"
   auto_create_sub = var.auto_create_sub
   vpc_name = var.vpc_name
   subnet_us_range = var.subnet_us_range
@@ -8,7 +8,7 @@ module "network" {
 }
 
 module "gke" {
-  source = "../modules/gke"
+  source = "./modules/gke"
   cluster_name = var.cluster_name
   cluster_node_count = var.cluster_node_count
   cluster_version = var.cluster_network
