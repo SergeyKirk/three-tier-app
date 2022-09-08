@@ -1,4 +1,8 @@
 steps:
+  - name: ubuntu
+    args:
+      - cd
+      - terraform
   - name: 'hashicorp/terraform:1.0.0'
     args:
       - init
@@ -18,6 +22,10 @@ steps:
       - '-auto-approve'
       - '-input=false'
       - '-lock=false'
+  - name: ubuntu
+    args:
+      - cd
+      - ..
   - name: gcr.io/cloud-builders/kubectl
     args:
       - apply
