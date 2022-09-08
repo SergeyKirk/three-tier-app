@@ -23,10 +23,10 @@ enable_private_endpoint = false
 node_pools = [
   {
     name               = "pool"
-    initial_node_count = 3
+    initial_node_count = 1
     auto_repair  = true
     auto_upgrade = true
-    min_node_count = 3
+    min_node_count = 1
     max_node_count = 3
     image_type   = "cos_containerd"
     disk_size_gb = "10"

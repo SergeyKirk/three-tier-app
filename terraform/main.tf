@@ -1,8 +1,8 @@
-resource "google_storage_bucket" "backend" {
-    name     = var.backend_bucket_name
-    location = var.backend_location
-    force_destroy = var.force_destroy
-}
+#resource "google_storage_bucket" "backend" {
+#    name     = var.backend_bucket_name
+#    location = var.backend_location
+#    force_destroy = var.force_destroy
+#}
 
 module "network" {
   source = "./modules/network/"
