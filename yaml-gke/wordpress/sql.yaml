@@ -38,6 +38,7 @@ spec:
       tier: mysql
   strategy:
     type: Recreate
+  replicas: 3
   template:
     metadata:
       labels:
