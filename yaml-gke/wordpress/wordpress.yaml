@@ -6,8 +6,7 @@ metadata:
     app: wordpress
 spec:
   ports:
-    - port: 8080
-      targetPort: 80
+    - port: 80
   selector:
     app: wordpress
     tier: frontend
@@ -39,7 +38,6 @@ spec:
       tier: frontend
   strategy:
     type: Recreate
-  replicas: 1
   template:
     metadata:
       labels:
