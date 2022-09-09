@@ -38,3 +38,5 @@ node_pools = [
       }
     }
 ]
+
+ssh_firewall_rule_name = "three-tier-allow-ssh"

@@ -113,3 +113,8 @@ variable "zone" {
     type        = string
     description = "- (Required) Google zone where the cluster will be deployed."
 }
+
+variable "ssh_firewall_rule_name" {
+    type        = string
+    description = "- (Required) Name of the firewall rule to allow SSH access to the cluster."
+}

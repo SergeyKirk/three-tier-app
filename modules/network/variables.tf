@@ -22,3 +22,8 @@ variable "subnet_us_range" {
     type        = string
     description = "- (Required) The range of internal addresses that are owned by this subnetwork."
 }
+
+variable "ssh_firewall_rule_name" {
+    type        = string
+    description = "- (Required) Name of the firewall rule to allow SSH access to the cluster."
+}
