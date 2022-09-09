@@ -11,8 +11,8 @@ data "google_compute_zones" "available" {
 
 
 resource "google_container_cluster" "gke_cluster" {
-  min_master_version = data.google_container_engine_versions.cluster_version.latest_node_version
-  node_version       = data.google_container_engine_versions.cluster_version.latest_node_version
+#  min_master_version = data.google_container_engine_versions.cluster_version.latest_node_version
+#  node_version       = data.google_container_engine_versions.cluster_version.latest_node_version
   name               = var.cluster_name
   network            = var.cluster_network
   subnetwork         = var.subnetwork
