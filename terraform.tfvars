@@ -41,3 +41,7 @@ node_pools = [
 ]
 
 ssh_firewall_rule_name = "three-tier-allow-ssh"
+
+instance_name = "apache2"
+instance_type = "e2-medium"
+instance_image = "ubuntu-1804-bionic-v20220901"

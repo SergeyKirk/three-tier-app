@@ -25,3 +25,12 @@ module "gke" {
   private_nodes = var.private_nodes
   control_network = var.control_network
 }
+
+module "gce" {
+  source = "./modules/gce"
+  instance_image = var.instance_image
+  instance_name  = var.instance_name
+  instance_type  = var.instance_type
+  network_name   = module.network.vpc_name
+  zone           = var.zone
+}

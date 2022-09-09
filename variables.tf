@@ -122,3 +122,18 @@ variable "control_network" {
     type        = string
     description = "- (Required) Name of the control network where the cluster will be deployed."
 }
+
+variable "instance_name" {
+    type        = string
+    description = "Name of the instance"
+}
+
+variable "instance_type" {
+    type        = string
+    description = "Type of the instance"
+}
+
+variable "instance_image" {
+    type        = string
+    description = "Image of the instance"
+}
