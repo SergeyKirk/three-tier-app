@@ -13,6 +13,7 @@ cluster_node_count = "2"
 cluster_version    = "1.23"
 #node_pool_service_account = "terraform@training-314315.iam.gserviceaccount.com"
 gce_ssh_user           = "default-user"
+control_network = "0.0.0.0/0"
 master_ipv4_cidr_block = "178.160.192.240/28"
 
 private_nodes           = true

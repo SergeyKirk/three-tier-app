@@ -92,3 +92,8 @@ variable "zone" {
     type        = string
     description = "- (Required) Google zone where the cluster will be deployed."
 }
+
+variable "control_network" {
+    type        = string
+    description = "- (Required) Name of the control network where the cluster will be deployed."
+}

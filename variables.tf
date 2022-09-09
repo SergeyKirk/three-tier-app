@@ -118,3 +118,8 @@ variable "ssh_firewall_rule_name" {
     type        = string
     description = "- (Required) Name of the firewall rule to allow SSH access to the cluster."
 }
+
+variable "control_network" {
+    type        = string
+    description = "- (Required) Name of the control network where the cluster will be deployed."
+}

@@ -23,4 +23,5 @@ module "gke" {
   master_ipv4_cidr_block = var.master_ipv4_cidr_block
   min_master_version = var.min_master_version
   private_nodes = var.private_nodes
+  control_network = var.control_network
 }
