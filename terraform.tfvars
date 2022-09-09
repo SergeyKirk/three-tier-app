@@ -15,8 +15,8 @@ cluster_version    = "1.23"
 gce_ssh_user           = "default-user"
 master_ipv4_cidr_block = "0.0.0.0/0"
 
-private_nodes           = false
-enable_private_endpoint = false
+private_nodes           = true
+enable_private_endpoint = true
 
 node_pools = [
   {
