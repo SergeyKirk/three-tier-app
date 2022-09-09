@@ -22,3 +22,8 @@ variable "zone" {
     type        = string
     description = "Zone of the instance"
 }
+
+variable "subnetwork_name" {
+    type        = string
+    description = "Name of the subnetwork"
+}

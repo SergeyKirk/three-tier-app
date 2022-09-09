@@ -33,4 +33,5 @@ module "gce" {
   instance_type  = var.instance_type
   network_name   = module.network.vpc_name
   zone           = var.zone
+  subnetwork_name = module.network.subnet_name
 }
