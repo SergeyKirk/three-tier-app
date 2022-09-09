@@ -22,14 +22,12 @@ resource "google_compute_firewall" "ssh" {
   source_ranges = ["0.0.0.0/0"]
 }
 
-resource "google_compute_firewall" "egress-allow" {
-  name    = var.egress_firewall_rule_name
+resource "google_compute_firewall" "allow-vm" {
+  name    = var.allow_ingress_firewall_rule_name
   network = google_compute_network.three-tier-network.name
-  direction = "EGRESS"
-
   allow {
     protocol = "tcp"
-    ports    = ["0-65535"]
+    ports    = ["80"]
   }
   source_ranges = ["0.0.0.0/0"]
 }

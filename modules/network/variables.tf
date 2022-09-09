@@ -33,3 +33,9 @@ variable "egress_firewall_rule_name" {
   default = "egress-firewall-rule"
     description = "- (Required) Name of the firewall rule to allow egress traffic to the internet."
 }
+
+variable "allow_ingress_firewall_rule_name" {
+    type        = string
+  default = "ingress-firewall-rule"
+    description = "- (Required) Name of the firewall rule to allow egress traffic to the internet."
+}
