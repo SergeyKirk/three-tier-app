@@ -5,6 +5,7 @@ module "network" {
   subnet_us_range = var.subnet_us_range
   subnet_us_name = var.subnet_us_name
   region = var.region
+  ssh_firewall_rule_name = var.ssh_firewall_rule_name
 }
 
 module "gke" {
