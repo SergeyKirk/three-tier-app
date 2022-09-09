@@ -59,6 +59,7 @@ resource "google_container_cluster" "gke_cluster" {
         labels          = node_pool.value.labels
         service_account = "${data.google_project.project.number}-compute@developer.gserviceaccount.com"
         metadata        = node_pool.value.metadata
+        oauth_scopes = ["https://www.googleapis.com/auth/cloud-platform"]
       }
     }
   }

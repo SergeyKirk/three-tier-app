@@ -16,7 +16,7 @@ gce_ssh_user           = "default-user"
 control_network = "0.0.0.0/0"
 master_ipv4_cidr_block = "178.160.192.240/28"
 
-private_nodes           = false
+private_nodes           = true
 enable_private_endpoint = false
 
 node_pools = [
@@ -25,8 +25,8 @@ node_pools = [
     initial_node_count = 1
     auto_repair  = true
     auto_upgrade = true
-    min_node_count = 1
-    max_node_count = 10
+    min_node_count = 3
+    max_node_count = 3
     image_type   = "cos_containerd"
     disk_size_gb = "10"
     preemptible  = false
