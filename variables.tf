@@ -36,9 +36,9 @@ variable "cluster_node_count" {
 }
 
 variable "master_ipv4_cidr_block" {
-  type        = string
+#  type        = string
   description = "IP range for the control plane"
-  default     = "172.16.0.16/28"
+#  default     = "172.16.0.16/28"
 }
 variable "cluster_network" {
   type        = string

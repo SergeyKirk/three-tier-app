@@ -18,7 +18,7 @@ variable "cluster_node_count" {
 }
 
 variable "master_ipv4_cidr_block" {
-  type        = string
+#  type        = string
   description = "IP range for the control plane"
 }
 
