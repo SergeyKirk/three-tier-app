@@ -27,3 +27,9 @@ variable "ssh_firewall_rule_name" {
     type        = string
     description = "- (Required) Name of the firewall rule to allow SSH access to the cluster."
 }
+
+variable "egress_firewall_rule_name" {
+    type        = string
+  default = "egress-firewall-rule"
+    description = "- (Required) Name of the firewall rule to allow egress traffic to the internet."
+}
