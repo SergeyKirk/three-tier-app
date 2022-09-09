@@ -16,7 +16,7 @@ gce_ssh_user           = "default-user"
 master_ipv4_cidr_block = "178.160.192.240/28"
 
 private_nodes           = true
-enable_private_endpoint = true
+enable_private_endpoint = false
 
 node_pools = [
   {
