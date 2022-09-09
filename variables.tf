@@ -84,7 +84,6 @@ variable "gce_ssh_pub_key_file" {
 
 variable "private_nodes" {
   type    = bool
-  default = false
 }
 
 variable "enable_private_endpoint" {
