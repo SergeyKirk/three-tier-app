@@ -20,4 +20,7 @@ module "gke" {
   subnetwork = module.network.subnet_name
   cluster_network = module.network.vpc_name
   zone = var.zone
+  master_ipv4_cidr_block = var.master_ipv4_cidr_block
+  min_master_version = var.min_master_version
+  private_nodes = var.private_nodes
 }

@@ -20,8 +20,8 @@ variable "cluster_node_count" {
 variable "master_ipv4_cidr_block" {
   type        = string
   description = "IP range for the control plane"
-  default     = "172.16.0.16/28"
 }
+
 variable "cluster_network" {
   type        = string
   description = "- (Optional) The name or self_link of the Google Compute Engine network to which the cluster is connected. For Shared VPC, set this to the self link of the shared network."
@@ -49,7 +49,7 @@ variable "node_version" {
 
 variable "min_master_version" {
   description = "- (Optional) The kubernetes version for the nodes in the pool. This should match the Kubernetes version of the GKE cluster."
-  default     = "1.17"
+#  default     = "1.17"
 }
 
 variable "gce_ssh_user" {
@@ -64,7 +64,6 @@ variable "gce_ssh_pub_key_file" {
 
 variable "private_nodes" {
   type    = bool
-  default = false
 }
 
 variable "enable_private_endpoint" {
