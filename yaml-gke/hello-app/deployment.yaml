@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: "gcr.io/google-samples/hello-frontend:1.0"
+          image: "gcr.io/google-samples/hello-frontend"
           lifecycle:
             preStop:
               exec:
