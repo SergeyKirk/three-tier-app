@@ -30,10 +30,6 @@ variable "cluster_version" {
   type        = string
   description = "- (Required) Version of the cluster."
 }
-variable "cluster_node_count" {
-  type        = string
-  description = "- (Required) Number of nodes for the cluster."
-}
 
 variable "master_ipv4_cidr_block" {
 #  type        = string
@@ -70,11 +66,6 @@ variable "node_version" {
 variable "min_master_version" {
   description = "- (Optional) The kubernetes version for the nodes in the pool. This should match the Kubernetes version of the GKE cluster."
   default     = "1.17"
-}
-
-variable "gce_ssh_user" {
-  description = "- (Optional) ssh user"
-  default     = "default-user"
 }
 
 variable "gce_ssh_pub_key_file" {

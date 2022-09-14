@@ -12,11 +12,6 @@ variable "cluster_version" {
   description = "- (Required) Version of the cluster."
 }
 
-variable "cluster_node_count" {
-  type        = string
-  description = "- (Required) Number of nodes for the cluster."
-}
-
 variable "master_ipv4_cidr_block" {
 #  type        = string
   description = "IP range for the control plane"
