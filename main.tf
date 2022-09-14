@@ -11,7 +11,6 @@ module "network" {
 module "gke" {
   source = "./modules/gke"
   cluster_name = var.cluster_name
-  cluster_version = var.cluster_network
   enable_private_endpoint = var.enable_private_endpoint
   node_pools = var.node_pools
   project_id = var.project_id

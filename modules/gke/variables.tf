@@ -7,10 +7,10 @@ variable "region" {
   description = "- (Required) Google region where the cluster will be deployed."
 }
 
-variable "cluster_version" {
-  type        = string
-  description = "- (Required) Version of the cluster."
-}
+#variable "cluster_version" {
+#  type        = string
+#  description = "- (Required) Version of the cluster."
+#}
 
 variable "master_ipv4_cidr_block" {
 #  type        = string

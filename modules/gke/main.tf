@@ -1,9 +1,5 @@
 data "google_project" "project" {}
 
-data "google_container_engine_versions" "cluster_version" {
-  location = var.region
-  project  = var.project_id
-}
 
 data "google_compute_zones" "available" {
   region = var.region

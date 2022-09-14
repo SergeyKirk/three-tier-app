@@ -26,10 +26,10 @@ variable "subnet_us_range" {
     description = "- (Required) The range of internal addresses that are owned by this subnetwork."
 }
 
-variable "cluster_version" {
-  type        = string
-  description = "- (Required) Version of the cluster."
-}
+#variable "cluster_version" {
+#  type        = string
+#  description = "- (Required) Version of the cluster."
+#}
 
 variable "master_ipv4_cidr_block" {
 #  type        = string
